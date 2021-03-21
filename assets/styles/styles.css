@@ -46,6 +46,7 @@ body .container header {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 50px;
 }
 
 body .container header .logo-container svg {
@@ -123,17 +124,39 @@ body .container header .cart-container button {
 }
 
 body .container header .cart-container .last-header-btn {
-  margin-left: 25px;
+  margin-left: 35px;
 }
 
 body .container .body-img-container {
-  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-body .container .body-img-container img {
+body .container .body-img-container .image-box {
+  height: 100vh;
+  overflow: hidden;
+  min-width: 100%;
+  -webkit-transition: linear 400ms;
+  transition: linear 400ms;
+}
+
+body .container .body-img-container .image-box .main-image {
   display: block;
   height: 100vh;
+  width: 100%;
+  -webkit-transition: linear 400ms;
+  transition: linear 400ms;
 }
 
 body .container .body-text-container {
@@ -144,13 +167,20 @@ body .container .body-text-container {
   font-weight: bold;
   font-size: 50px;
   line-height: 80px;
-  /* or 125% */
+  position: relative;
   color: #EB5757;
 }
 
 body .container .body-text-container .body-text {
   width: 80%;
   margin: 0 auto;
+}
+
+body .container .body-text-container .body-number {
+  width: 80%;
+  margin: 0 auto;
+  color: #ffffff;
+  padding-top: 70px;
 }
 
 body .container .bottom-container {
@@ -170,7 +200,7 @@ body .container .bottom-container {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 70.5%;
+  width: 67%;
 }
 
 body .container .bottom-container .con {

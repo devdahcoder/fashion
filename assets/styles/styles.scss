@@ -63,6 +63,10 @@ body {
         display: flex;
         align-items: center;
 
+        // .head-container {
+            
+        // }
+
         header {
             display: flex;
             flex-direction: row;
@@ -72,6 +76,7 @@ body {
             top: 0;
             left: 0;
             width: 100%;
+            padding: 0 50px;
 
 
 
@@ -126,34 +131,46 @@ body {
                 }
 
                 .last-header-btn {
-                    margin-left: 25px;
+                    margin-left: 35px;
                 }
             }
         }
 
         .body-img-container {
-            // border: 1px solid yellow;
-            width: 500px;
-            overflow: hidden;
+            max-width: 500px;
+            min-width: 500px;
             // display: block;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: row;
 
-            img {
-                display: block;
+            .image-box {
                 height: 100vh;
-                // width: 100%;
-                // object-fit: contain;
+                overflow: hidden;
+                min-width: 100%;
+                transition: linear 400ms;
                 
+                .main-image {
+                    display: block;
+                    height: 100vh;
+                    width: 100%;
+                    transition: linear 400ms;
+                    // object-fit: contain;
+                    
+                }
             }
+
+            
         }
 
         .body-text-container {
             flex-grow: 1;
-            // border: 3px solid rgb(255, 0, 76);
             font-style: normal;
             font-weight: bold;
             font-size: 50px;
             line-height: 80px;
-            /* or 125% */
+            position: relative;
             
             
             
@@ -162,6 +179,14 @@ body {
             .body-text {
                 width: 80%;
                 margin: 0 auto;
+                // border: 1px solid white;
+            }
+
+            .body-number {
+                width: 80%;
+                margin: 0 auto;
+                color: #ffffff;
+                padding-top: 70px;
             }
         }
 
@@ -175,7 +200,7 @@ body {
             justify-content: space-between;
             // align-items: center;
             align-items: flex-end;
-            width: 70.5%;
+            width: 67%;
 
             .con {
                 display: flex;

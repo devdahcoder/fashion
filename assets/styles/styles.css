@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Noto+Sans+SC&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto+Mono&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  font-size: 14px;
+  line-height: 18px;
+  height: 100%;
+  background-color: #1c2237;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body .container header .logo-container svg {
+  height: 100%;
+  width: 100%;
+}
+
+body .container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #EB5757;
+  padding: 30px 10px;
+  border-radius: 5px;
+}
+
+body .container header nav ul {
+  list-style: none;
+}
+
+body .container header nav ul li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+body .container header nav ul li a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+body .container header nav ul li a:hover {
+  color: #f18383;
+}
+
+body .container header .cart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container header .cart-container button {
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  outline: none;
+}
+
+body .container header .cart-container .last-header-btn {
+  margin-left: 25px;
+}
+
+body .container .body-img-container {
+  width: 500px;
+  overflow: hidden;
+}
+
+body .container .body-img-container img {
+  display: block;
+  height: 100vh;
+}
+
+body .container .body-text-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 80px;
+  /* or 125% */
+  color: #EB5757;
+}
+
+body .container .body-text-container .body-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .container .bottom-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 70.5%;
+}
+
+body .container .bottom-container .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bottom-container .con .btn-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 130px;
+}
+
+body .container .bottom-container .con .btn-footer-container button {
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  outline: none;
+  background: #FFFFFF;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+body .container .bottom-container .con .social-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bottom-container .con .social-link-container .footer-ul {
+  list-style: none;
+}
+
+body .container .bottom-container .con .social-link-container .footer-ul li {
+  padding: 0px 40px;
+  display: inline-block;
+}
+
+body .container .bottom-container .con .social-link-container .footer-ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+body .container .bottom-container .footer-scroll {
+  min-height: 250px;
+  background-color: #EB5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+}
+
+body .container .bottom-container .footer-scroll p {
+  position: relative;
+}
+
+body .container .bottom-container .footer-scroll p::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 50;
+  left: 50%;
+  border-radius: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */

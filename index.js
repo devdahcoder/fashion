@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
     const imageDisplay = document.querySelector(".body-img-container");
     const sliderBtn = document.querySelectorAll(".slider-btn");
     const mainImage = document.querySelector(".main-image");
+    let imageIndex = document.querySelector(".number");
 
 
     let images = [
@@ -59,17 +60,33 @@ window.addEventListener("load", () => {
         }
     ];
 
-    // let html = "";
 
-    // images.map(image => {
-    //     html+= `
-    //     <div class="image-box">
-    //         <img class="main-image" src="${image.image}" alt="">
-    //     </div>
+    const setImage = () => {
+        mainImage.src = images[counter].image;
+        imageIndex.textContent = `
+        ${counter <= 9 ? "0" : "" }${images[counter].id}`
+    }
+
+    
+
+    // const callRight = () => {
+    //     counter++;
+
+    //     console.log("contains forward");
+
+    //     if (counter > images.length - 1) {
+    //         counter = 0;
+    //     }
+
+    //     mainImage.src = images[counter].image;
+    //     imageIndex.textContent = `
+    //         ${counter <= 9 ? "0" : "" }${images[counter].id}
     //     `
-    // });
+    // }
 
-    // imageDisplay.innerHTML = html;
+    // setInterval(() => {
+    //     callRight()
+    // }, 2000);
 
 
     sliderBtn.forEach(slideBtn => {
@@ -84,9 +101,15 @@ window.addEventListener("load", () => {
                 }
 
                 mainImage.src = images[counter].image;
+                imageIndex.textContent = `
+                    ${counter <= 9 ? "0" : "" }${images[counter].id}
+                `
 
             }
+
+            
             if (slideBtn.classList.contains("forward-btn")) {
+
                 counter++;
 
                 console.log("contains forward");
@@ -96,10 +119,13 @@ window.addEventListener("load", () => {
                 }
 
                 mainImage.src = images[counter].image;
+                imageIndex.textContent = `
+                    ${counter <= 9 ? "0" : "" }${images[counter].id}
+                `
             }
         });
-    })
+    });
 
-
+    setImage();
 
 })
